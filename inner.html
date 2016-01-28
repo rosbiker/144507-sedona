@@ -7,7 +7,9 @@
 <body>
   <header class="main-header">
     <div class="logo-header">
-      <a href="index.html"><img src="img/logo-top.png" alt="Logo" width="138" height="70"></a></div>
+      <a href="index.html">
+        <img src="img/logo-top.png" alt="Logo" width="138" height="70"></a>
+    </div>
     <div class="main-nav">
       <ul class="nav-list">
         <li class="nav-item">
@@ -72,14 +74,18 @@
       <div class="cost">
         <fieldset>
           <legend>стоимость в сутки (р):</legend>
-          <div class="cost-from">
-            <output name="cost-from" id="cost-from">от 0</output>
+          <div class="price-from">
+            <label for="price-min">
+              <input type="text" name="price-min" id="price-min" value="от 0"></label>
+            <label for="">
+            <span class="price-separator">|</span>
+              <input type="text"name="price-max" id="price-max" value="до 3000"></label>
           </div>
-          <div class="cost-to">
-            <output name="cost-to" id="cost-to">до 3000</output>
+          <div class="slider-range">
+            <div class="ui-slider-range"></div>
+            <div class="ui-slider-handel"></div>
+            <div class="ui-slider-handel"></div>
           </div>
-          <div class="slider">
-            <!--блок со слайдером я че то пока не пойму как его сделать(((((--> </div>
         </fieldset>
         <button class="search-button">ПОКАЗАТЬ</button>
       </div>
@@ -90,19 +96,28 @@
     <div class="sort">
       <div class="class1">НАЙДЕНО: 3</div>
       <div class="class2">сортировка:</div>
-      <div class="class3">по цене</div>
-      <div class="class4">по типу</div>
-      <div class="class5">по рейтингу</div>
-      <div class="class5">
-        <button class="btn-up" name="btn-up">Вверх</button>
-        <button class="btn-down" name="btn-down">вниз</button>
+      <div class="sort-unit">
+        <ul class="sort-list">
+          <li class="sort-item">
+            <a href="" class="sort link">по цене</a>
+          </li>
+          <li class="sort-item">
+            <a href="" class="sort link">по типу</a>
+          </li>
+          <li class="sort-item">
+            <a href="" class="sort link">по рейтингу</a>
+          </li>
+        </ul>
+      </div>
+      <div class="arrow-unit">
+        <div class="pic-up" name="pic-up">Вверх</div>
+        <div class="btn-down" name="btn-down">вниз</div>
       </div>
     </div>
     <div class="search-result">
       <div class="class11">
         <div class="pic-result">
-          <img src="#" alt=""></div> 
-          <b class="hotel-name">AMARA RESORT & SPA</b>
+          <img src="http://placehold.it/135x90" alt=""></div> <b class="hotel-name">AMARA RESORT & SPA</b>
         <div class="hotel-cost">ГОСТИНИЦА от 3500 р.</div>
         <a href="" class="btn-more">подробнее</a>
         <a href="" class="btn-booking">забронировать</a>
@@ -111,7 +126,7 @@
       </div>
       <div class="class12">
         <div class="pic-result">
-          <img src="#" alt=""></div> <b class="hotel-name">DESERT QUAIL INN</b>
+          <img src="http://placehold.it/135x90" alt=""></div> <b class="hotel-name">DESERT QUAIL INN</b>
         <div class="hotel-cost">МОТЕЛЬ ОТ 2500 Р.</div>
         <a href="" class="btn-more">подробнее</a>
         <a href="" class="btn-booking">забронировать</a>
@@ -120,7 +135,7 @@
       </div>
       <div class="class13">
         <div class="pic-result">
-          <img src="#" alt=""></div>
+          <img src="http://placehold.it/135x90" alt=""></div>
         <b class="hotel-name">VILLAS AT POCO DIABLO</b>
         <div class="hotel-cost">АПАРТАМЕНТЫ от 4000 Р.</div>
         <a href="" class="btn-more">подробнее</a>
@@ -135,11 +150,11 @@
       <section class="footer-contacts">#VISITSEDONA</section>
       <section class="footer-social">
         <a class="social-btn social-btn-twit" href="#">
-          <img src="#" alt="twiter"></a>
+          <img src="http://placehold.it/48x48" alt="twiter"></a>
         <a class="social-btn social-btn-fb" href="#">
-          <img src="#" alt="facebook"></a>
+          <img src="http://placehold.it/48x48" alt="facebook"></a>
         <a class="social-btn social-btn-yt" href="#">
-          <img src="#" alt="youtube???"></a>
+          <img src="http://placehold.it/48x48" alt="youtube???"></a>
       </section>
       <section class="footer-copyright">
 
