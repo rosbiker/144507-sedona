@@ -1,51 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+</head>
+<body>
   <header class="main-header">
-  	<div class="main-nav">
-  		<div class="mian-nav-left">
-  			<ul class="nav-list">
-  				<li class="nav-item"><a href="#">информация</a></li>
-  				<li class="nav-item"><a href="#">фото и видео</a></li>
-  			</ul>
-  		</div>
-  		<div class="logo-header">
-  			<img src="#" alt="logo-sedona">
-  		</div>
-  		<div class="mian-nav-right">
-  			<ul class="nav-list">
-  				<li class="nav-item"><a href="#">карта штата</a></li>
-  				<li class="nav-item"><a href="#">гостиница</a></li>
-  			</ul>
-  		</div>
-  	</div>
+    <div class="logo-header">
+      <a href="index.html"><img src="img/logo-top.png" alt="Logo" width="138" height="70"></a></div>
+    <div class="main-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#">информация</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">фото и видео</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#">карта штата</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">гостиница</a>
+        </li>
+      </ul>
+    </div>
+
   </header>
-  div.content-filter>(div.infrastructure>ul.filter-list>(li.filter-item)*3)+(div.infrastructure>ul.filter-list>(li.filter-item)*3)
+  <div class="content-filter">
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <div class="infrastructure">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label for="pool">
+                <input type="checkbox" name="pool" id="pool"checked>бассейн</label>
+            </li>
+            <li class="filter-item">
+              <label for="parking">
+                <input type="checkbox" name="parking" id="parking">парковка</label>
+            </li>
 
-  
-  <footer class="main-footer">
-      <div class="container">
-        <section class="footer-contacts">
-          #VISITSEDONA
-        </section>
-        <section class="footer-social">
-          <a class="social-btn social-btn-twit" href="#"><img src="#" alt="twiter"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="#" alt="facebook"></a>
-          <a class="social-btn social-btn-yt" href="#"><img src="#" alt="youtube???"></a>
-        </section>
-        <section class="footer-copyright">
-          
-          <a class="html-logo" href="https://htmlacademy.ru">WEBSITE BY:<img src="#" alt="HTML-logo">html academy</a>
-        </section>
+            <li class="filter-item">
+              <label for="wi-fi">
+                <input type="checkbox" name="wi-fi" id="wi-fi">Wi-Fi</label>
+            </li>
+
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>тип жилья:</legend>
+        <div class="infrastructure">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label for="hotel">
+                <input type="checkbox" name="hotel" id="hotel" checked>гостиница</label>
+            </li>
+            <li class="filter-item">
+              <label for="motel">
+                <input type="checkbox" name="motel" id="motel" checked>мотель</label>
+            </li>
+            <li class="filter-item">
+              <label for="apart">
+                <input type="checkbox" name="apart" id="apart" checked>апартаменты</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <div class="cost">
+        <fieldset>
+          <legend>стоимость в сутки (р):</legend>
+          <div class="cost-from">
+            <output name="cost-from" id="cost-from">от 0</output>
+          </div>
+          <div class="cost-to">
+            <output name="cost-to" id="cost-to">до 3000</output>
+          </div>
+          <div class="slider">
+            <!--блок со слайдером я че то пока не пойму как его сделать(((((--> </div>
+        </fieldset>
+        <button class="search-button">ПОКАЗАТЬ</button>
       </div>
-    </footer>
+    </form>
+  </div>
 
+  <div class="search-content">
+    <div class="sort">
+      <div class="class1">НАЙДЕНО: 3</div>
+      <div class="class2">сортировка:</div>
+      <div class="class3">по цене</div>
+      <div class="class4">по типу</div>
+      <div class="class5">по рейтингу</div>
+      <div class="class5">
+        <button class="btn-up" name="btn-up">Вверх</button>
+        <button class="btn-down" name="btn-down">вниз</button>
+      </div>
+    </div>
+    <div class="search-result">
+      <div class="class11">
+        <div class="pic-result">
+          <img src="#" alt=""></div> 
+          <b class="hotel-name">AMARA RESORT & SPA</b>
+        <div class="hotel-cost">ГОСТИНИЦА от 3500 р.</div>
+        <a href="" class="btn-more">подробнее</a>
+        <a href="" class="btn-booking">забронировать</a>
+        <div class="star">****</div>
+        <div class="rating">рейтинг: 8,5</div>
+      </div>
+      <div class="class12">
+        <div class="pic-result">
+          <img src="#" alt=""></div> <b class="hotel-name">DESERT QUAIL INN</b>
+        <div class="hotel-cost">МОТЕЛЬ ОТ 2500 Р.</div>
+        <a href="" class="btn-more">подробнее</a>
+        <a href="" class="btn-booking">забронировать</a>
+        <div class="star">**</div>
+        <div class="rating">рейтинг: 8,9</div>
+      </div>
+      <div class="class13">
+        <div class="pic-result">
+          <img src="#" alt=""></div>
+        <b class="hotel-name">VILLAS AT POCO DIABLO</b>
+        <div class="hotel-cost">АПАРТАМЕНТЫ от 4000 Р.</div>
+        <a href="" class="btn-more">подробнее</a>
+        <a href="" class="btn-booking">забронировать</a>
+        <div class="star">***</div>
+        <div class="rating">рейтинг: 9,2</div>
+      </div>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="container">
+      <section class="footer-contacts">#VISITSEDONA</section>
+      <section class="footer-social">
+        <a class="social-btn social-btn-twit" href="#">
+          <img src="#" alt="twiter"></a>
+        <a class="social-btn social-btn-fb" href="#">
+          <img src="#" alt="facebook"></a>
+        <a class="social-btn social-btn-yt" href="#">
+          <img src="#" alt="youtube???"></a>
+      </section>
+      <section class="footer-copyright">
 
-    
+        <a class="html-logo" href="https://htmlacademy.ru">
+          WEBSITE BY:
+          <img src="#" alt="HTML-logo">html academy</a>
+      </section>
+    </div>
+  </footer>
 
-  </body>
+</body>
 </html>
