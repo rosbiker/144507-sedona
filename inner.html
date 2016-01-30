@@ -28,13 +28,13 @@
     </div>
   </header>
 
-
   <main class="main-inner">
     <div class="content-filter">
       <form action="#" method="get">
         <fieldset>
           <legend>инфраструктура:</legend>
-          <div class="infrastructure"> <!--а нужен ли здесь этот блок обертки катя? Можно ли без него обойтись? -->
+          <div class="infrastructure">
+            <!--а нужен ли здесь этот блок обертки катя? Можно ли без него обойтись? -->
             <ul class="filter-list">
               <li class="filter-item">
                 <label for="pool">
@@ -76,10 +76,12 @@
             <legend>стоимость в сутки (р):</legend>
             <div class="price-from">
               <label for="price-min">
-                <input type="text" name="price-min" id="price-min" value="от 0"></label>
-              <label for="">
-                <span class="price-separator">|</span>
-                <input type="text"name="price-max" id="price-max" value="до 3000"></label>
+                от
+                <input type="text" name="price-min" id="price-min" value="0"></label>
+              <span class="price-separator">|</span>
+              <label for="price-max">
+                до
+                <input type="text"name="price-max" id="price-max" value="3000"></label>
             </div>
             <div class="slider-range">
               <div class="ui-slider-range"></div>
@@ -92,56 +94,110 @@
       </form>
     </div>
 
-    <div class="search-content">
-      <div class="sort">
-        <div class="class1">найдено: 3</div>
-        <div class="class2">сортировка:</div>
-        <div class="sort-unit">
-          <ul class="sort-list">
-            <li class="sort-item">
-              <a href="#" class="sort link">по цене</a>
-            </li>
-            <li class="sort-item">
-              <a href="#" class="sort link">по типу</a>
-            </li>
-            <li class="sort-item">
-              <a href="#" class="sort link">по рейтингу</a>
-            </li>
-          </ul>
-        </div>
-        <div class="arrow-unit">
-          <div class="pic-up" name="pic-up">вверх</div>
-          <div class="btn-down" name="btn-down">вниз</div>
+    <div class="search-conteiner">
+      <div class="search-sort-header">
+        <div class="sorting">
+          <div class="search-result">
+            <span class="result-text">найдено:</span>
+            <span class="result-quantity">3</span>
+          </div>
+          <div class="sort-by">
+            <span class="sort-header-text">сортировка:</span>
+            <ul class="sort-list">
+              <li class="sort-item">
+                <a href="#" class="sort link">по цене</a>
+              </li>
+              <li class="sort-item">
+                <a href="#" class="sort link">по типу</a>
+              </li>
+              <li class="sort-item">
+                <a href="#" class="sort link">по рейтингу</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sort-arrow">
+            <div class="sort-icon-up">
+              <a href="#"></a>
+            </div>
+            <div class="sort-icon-down">
+              <a href="#"></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="search-result">
-        <div class="class11">
-          <div class="pic-result">
-            <img src="http://placehold.it/135x90" alt=""></div> <b class="hotel-name">amara resort & spa</b>
-          <div class="hotel-cost">гостиница от 3500 р.</div>
-          <a href="#" class="btn-more">подробнее</a>
-          <a href="#" class="btn-booking">забронировать</a>
-          <div class="star">****</div>
-          <div class="rating">рейтинг: 8,5</div>
-        </div>
-        <div class="class12">
-          <div class="pic-result">
-            <img src="http://placehold.it/135x90" alt=""></div> <b class="hotel-name">desert quail inn</b>
-          <div class="hotel-cost">мотель от 2500 р.</div>
-          <a href="#" class="btn-more">подробнее</a>
-          <a href="#" class="btn-booking">забронировать</a>
-          <div class="star"></div>
-          <div class="rating">рейтинг: 8,9</div>
-        </div>
-        <div class="class13">
-          <div class="pic-result">
+      <div class="result-content">
+        <div class="content-block">
+          <div class="img-result">
             <img src="http://placehold.it/135x90" alt=""></div>
-          <b class="hotel-name">villas at poco diablo</b>
-          <div class="hotel-cost">апартаменты от 4000 р.</div>
-          <a href="#" class="btn-more">подробнее</a>
-          <a href="#" class="btn-booking">забронировать</a>
-          <div class="star"></div>
-          <div class="rating">рейтинг: 9,2</div>
+          <div class="content-main">
+            <div class="hotel-name">
+              <span class="hotel-name-title">amara resort & spa</span>
+            </div>
+            <div class="content-text-left">
+              <span class="hotel-type">гостиница</span>
+              <a href="#" class="btn-more">подробнее</a>
+            </div>
+            <div class="content-text-right">
+              <span class="hotel-cost">от 3500 р.</span>
+              <a href="#" class="btn-booking">забронировать</a>
+            </div>
+          </div>
+          <div class="raitng-block">
+            <div class="star star-4"></div>
+            <div class="rating">
+              <span class="raiting-text">рейтинг:</span>
+              <span class="raiting-value">8,5</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="content-block">
+          <div class="img-result">
+            <img src="http://placehold.it/135x90" alt=""></div>
+          <div class="content-main">
+            <div class="hotel-name">
+              <span class="hotel-name-title">desert quail inn</span>
+            </div>
+            <div class="content-text-left">
+              <span class="hotel-type">мотель</span>
+              <a href="#" class="btn-more">подробнее</a>
+            </div>
+            <div class="content-text-right">
+              <span class="hotel-cost">от 2000 р.</span>
+              <a href="#" class="btn-booking">забронировать</a>
+            </div>
+          </div>
+          <div class="raitng-block">
+            <div class="star star-2"></div>
+            <div class="rating">
+              <span class="raiting-text">рейтинг:</span>
+              <span class="raiting-value">8,9</span>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="img-result">
+            <img src="http://placehold.it/135x90" alt=""></div>
+          <div class="content-main">
+            <div class="hotel-name">
+              <span class="hotel-name-title">villas at poco diablo</span>
+            </div>
+            <div class="content-text-left">
+              <span class="hotel-type">апартаменты</span>
+              <a href="#" class="btn-more">подробнее</a>
+            </div>
+            <div class="content-text-right">
+              <span class="hotel-cost">от 4000 р.</span>
+              <a href="#" class="btn-booking">забронировать</a>
+            </div>
+          </div>
+          <div class="raitng-block">
+            <div class="star star-3"></div>
+            <div class="rating">
+              <span class="raiting-text">рейтинг:</span>
+              <span class="raiting-value">9,2</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -150,16 +206,14 @@
     <div class="container">
       <section class="footer-contacts">#visitsedona</section>
       <section class="footer-social">
-        <a class="social-btn social-btn-twit" href="#">
-          <img src="http://placehold.it/48x48" alt="twiter"></a>
-        <a class="social-btn social-btn-fb" href="#">
-          <img src="http://placehold.it/48x48" alt="facebook"></a>
-        <a class="social-btn social-btn-yt" href="#">
-          <img src="http://placehold.it/48x48" alt="youtube???"></a>
+        <a class="social-btn social-btn-twit" href="#">Twiter</a>
+        <a class="social-btn social-btn-fb" href="#">Facebook</a>
+        <a class="social-btn social-btn-yt" href="#">youtube</a>
       </section>
       <section class="footer-copyright">
+        <span>website by:</span>
         <a class="html-logo" href="https://htmlacademy.ru">
-          website by:
+
           <img src="#" alt="html-logo">html academy</a>
       </section>
     </div>
