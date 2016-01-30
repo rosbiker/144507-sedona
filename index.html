@@ -7,7 +7,9 @@
 <body>
 	<header class="main-header">
 		<div class="logo-header">
-			<a href="index.html"><img src="img/logo-top.png" alt="Logo" width="138" height="70"></a></div>
+			<a href="index.html">
+				<img src="img/logo-top.png" alt="Logo" width="138" height="70"></a>
+		</div>
 		<div class="main-nav">
 			<ul class="nav-list">
 				<li class="nav-item">
@@ -25,116 +27,124 @@
 				</li>
 			</ul>
 		</div>
-
 	</header>
-	<div class="intro-container">
-		<img src="img/intro-font.jpg" alt="intro-font">
-		<!--Просто добавил посмотреть как выглядит, но мне кажется это с помощью ЦСС как фон для блока надо делать. ДА?-->
-		<div class="text-intro">
-			<img src="img/text-intro.png" alt=""></div>
-		<div class="foot-intro">
-			<img src="img/arrow.png" alt="decoration-arrow">
-		</div>
 
-	</div>
-	<div class="main-content">
-		<h1 class="main-header-content">
-			седона - небольшой городок в аризоне, заслуживающий большего!
-		</h1>
-		<p>
-			рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
-		</p>
-		<div class="unit-reason-city">
-			<div class="reason-unit" width="33%"> <b class="reason-head">настоящий городок</b>
-				<p>-№1-</p>
-				<p>седона - не аттракцион для туристов, там течет своя жизнь</p>
-			</div>
-			<img src="img/city.jpg" alt="pic-city" width="66%" height="?"></div> <!--Я помню про размеры, но пока не знаю как их посмотреть обязательно добавлю позже-->
-		<div class="unit-icon">
-			<div width="33%">
-				<img src="img/house-icon.png" alt="house" width="75" height="72">
-				<b>жилье</b>
-				<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-			</div>
-			<div width="33%">
-				<img src="img/burger-icon.png" alt="house" width="75" height="72">
-				<b>еда</b>
-				<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-			</div>
-			<div width="33%">
-				<img src="img/present-icon.png" alt="house" width="75" height="72">
-				<b>сувениры</b>
-				<p>не только ктиайского, но и местного производства</p>
-			</div>
-		</div>
-		<div class="unit-reason-bribge">
-			<img src="img/bridge.jpg" alt="devil's bridge" width="66%" height="?">
-			<div class="reason-unit" width="33%">
-				<b class="reason-head">там есть мост дьявола</b>
-				<p>-№2-</p>
-				<p>да, по нему можно пройти! если конечно осмелитесь</p>
-			</div>
 
+	<main class="main-index">
+		<div class="container-intro">
+			<img src="img/intro-font.jpg" alt="intro-font">
+			<!--Просто добавил посмотреть как выглядит, но мне кажется это с помощью ЦСС как фон для блока надо делать. ДА?-->
+			<div class="text-intro">
+				<img src="img/text-intro.png" alt=""></div>
+			<div class="foot-intro">
+				<img src="img/arrow.png" alt="decoration-arrow"></div>
 		</div>
-		<div class="unit-3reason">
-			<div class="reason-unit" width="33%">
-				<b class="reason-header">небольшая площадь</b>
-				<p>-№3-</p>
-				<p>все достопримечательности находятся очень близко</p>
+		<div class="main-content">
+			<div class="content">
+				<h1 class="main-header-content">
+					седона - небольшой городок в аризоне, заслуживающий большего!
+				</h1>
+				<p>
+					рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
+				</p>
 			</div>
-			<div class="reason-unit" width="33%">
-				<b class="reason-header">красивая дорога</b>
-				<p>-№4-</p>
-				<p>ехать из лас-вегаса совсем не скучно!</p>
-			</div>
-			<div class="reason-unit" width="33%">
-				<b class="reason-header">мало туристов</b>
-				<p>-№5-</p>
-				<p>большинство едет в гранд каньон и толпится там</p>
-			</div>
-		</div>
-	</div>
-	<div class="search-form-title">
-		<b class="title">заинтересовались?</b>
-		<p>
-			укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-		</p>
-	</div>
-	<div class="search-form">
-		<div class="search-header">
-			<p>поиск гостиниц в седоне</p>
-		</div>
-		<div class="search-main">
-			<form method="get" action="#" name="booking-form">
-				<label for="date-checkin">
-					дата заезда:
-					<input type="text" id="date-checkin" name="date-checkin"></label>
-				<label for="date-checkout">
-					дата выезда:
-					<input type="text" id="date-checkout" name="date-checkout"></label>
-				<div class="search-guest">
-					<div class="search-adults">
-						<label for="search-adults">
-							Взрослые:
-							<input type="hidden" value="2" id="search-adults" name="adults"></label>
-						<div class="search-guest-prev">-</div>
-						<span class="adults-count">2</span>
-						<div class="search-guest-next">+</div>
-					</div>
-					<div class="search-children">
-						<label for="search-children">
-							Дети:
-							<input type="hidden" value="2" id="search-children" name="children"></label>
-						<div class="search-guest-prev">-</div>
-						<span class="adults-count">0</span>
-						<div class="search-guest-next">+</div>
-					</div>
+			<div class="content">
+				<div class="description description-left">
+					<span class="description-head">настоящий городок</span>
+					<span class="descritpion-num">-№1-</span>
+					<p>седона - не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
-				<input type="submit" value="НАЙТИ"></form>
-		</div>
-	</div>
-	<div class="map-unit"><img src="img/map.png" alt="map"></div>
+				<div class="img-city img-content">
+					<img src="img/city.jpg" alt="pic-city" href="800px" height="?"></div>
+			</div>
 
+			<!--Я помню про размеры, но пока не знаю как их посмотреть обязательно добавлю позже-->
+			<div class="content">
+				<div class="recommendations">
+					<div class="house-icon"></div>
+					<span class="recommedation-header">жилье</span>
+					<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="recommendations">
+					<div class="burger-icon"></div>
+					<span class="recommedation-header">еда</span>
+					<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</div>
+				<div class="recommendations">
+					<div class="present-icon"></div>
+					<span class="recommedation-header">сувениры</span>
+					<p>не только ктиайского, но и местного производства</p>
+				</div>
+			</div>
+			<div class="content">
+				<div class="img-bridge img-content">
+					<img src="img/bridge.jpg" alt="devil's bridge" href="800px" height="?"></div>
+				<div class="description description-right">
+					<span class="description-head">там есть мост дьявола</span>
+					<span class="descritpion-num">-№2-</span>
+					<p>да, по нему можно пройти! если конечно осмелитесь</p>
+				</div>
+			</div>
+			<div class="content">
+				<div class="desription">
+					<span class="description-head">небольшая площадь</span>
+					<span class="descritpion-num">-№3-</span>
+					<p>все достопримечательности находятся очень близко</p>
+				</div>
+				<div class="description">
+					<span class="description-head">красивая дорога</span>
+					<span class="descritpion-num">-№4-</span>
+					<p>ехать из лас-вегаса совсем не скучно!</p>
+				</div>
+				<div class="description">
+					<span class="description-head">мало туристов</span>
+					<span class="descritpion-num">-№5-</span>
+					<p>большинство едет в гранд каньон и толпится там</p>
+				</div>
+			</div>
+		</div>
+		<div class="search-form-intro">
+			<span class="intro-title">заинтересовались?</span>
+			<span class="intro-text">
+				укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+			</span>
+		</div>
+		<div class="search-form">
+			<div class="search-form-header">
+				<p>поиск гостиниц в седоне</p>
+			</div>
+			<div class="search-form-main">
+				<form method="get" action="#" name="booking-form">
+					<label for="date-checkin">
+						дата заезда:
+						<input type="text" id="date-checkin" name="date-checkin"></label>
+					<label for="date-checkout">
+						дата выезда:
+						<input type="text" id="date-checkout" name="date-checkout"></label>
+					<div class="search-guest">
+						<div class="search-adults">
+							<label for="search-adults">
+								Взрослые:
+								<input type="hidden" value="2" id="search-adults" name="adults"></label>
+							<div class="search-guest-prev">-</div>
+							<span class="adults-count">2</span>
+							<div class="search-guest-next">+</div>
+						</div>
+						<div class="search-children">
+							<label for="search-children">
+								Дети:
+								<input type="hidden" value="2" id="search-children" name="children"></label>
+							<div class="search-guest-prev">-</div>
+							<span class="adults-count">0</span>
+							<div class="search-guest-next">+</div>
+						</div>
+					</div>
+					<input type="submit" value="НАЙТИ"></form>
+			</div>
+		</div>
+		<div class="map-unit">
+			<img src="img/map.png" alt="map"></div>
+	</main>
 	<footer class="main-footer">
 		<div class="container">
 			<section class="footer-contacts">#VISITSEDONA</section>
