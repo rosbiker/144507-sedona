@@ -2,29 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>седона</title>
+  <title>Поиск гостиниц</title>
 </head>
 <body>
   <header class="main-header">
-    <div class="logo-header">
-      <a href="index.html">
-        <img src="img/logo-top.png" alt="logo" width="138" height="70"></a>
-    </div>
-    <div class="main-nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#">информация</a>
-        </li>
-        <li class="nav-item">
-          <a href="#">фото и видео</a>
-        </li>
-        <li class="nav-item">
-          <a href="#">карта штата</a>
-        </li>
-        <li class="nav-item">
-          <a href="#">гостиница</a>
-        </li>
-      </ul>
+    <div class="container">
+      <a class="logo-header" href="index.html">
+        <img src="img/logo-top.png" alt="Logo" width="138" height="70"></a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">информация</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">фото и видео</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">карта штата</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">гостиница</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -33,43 +34,43 @@
       <form action="#" method="get">
         <fieldset>
           <legend>инфраструктура:</legend>
-          <div class="infrastructure">
-            <!--а нужен ли здесь этот блок обертки катя? Можно ли без него обойтись? -->
-            <ul class="filter-list">
-              <li class="filter-item">
-                <label for="pool">
-                  <input type="checkbox" name="pool" id="pool"checked>бассейн</label>
-              </li>
-              <li class="filter-item">
-                <label for="parking">
-                  <input type="checkbox" name="parking" id="parking">парковка</label>
-              </li>
 
-              <li class="filter-item">
-                <label for="wi-fi">
-                  <input type="checkbox" name="wi-fi" id="wi-fi">wi-fi</label>
-              </li>
-            </ul>
-          </div>
+          <!--а нужен ли здесь этот блок обертки катя? Можно ли без него обойтись? -->
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label for="pool">
+                <input type="checkbox" name="pool" id="pool"checked>бассейн</label>
+            </li>
+            <li class="filter-item">
+              <label for="parking">
+                <input type="checkbox" name="parking" id="parking">парковка</label>
+            </li>
+
+            <li class="filter-item">
+              <label for="wi-fi">
+                <input type="checkbox" name="wi-fi" id="wi-fi">wi-fi</label>
+            </li>
+          </ul>
+
         </fieldset>
         <fieldset>
           <legend>тип жилья:</legend>
-          <div class="type-house">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <label for="hotel">
-                  <input type="checkbox" name="hotel" id="hotel" checked>гостиница</label>
-              </li>
-              <li class="filter-item">
-                <label for="motel">
-                  <input type="checkbox" name="motel" id="motel" checked>мотель</label>
-              </li>
-              <li class="filter-item">
-                <label for="apart">
-                  <input type="checkbox" name="apart" id="apart" checked>апартаменты</label>
-              </li>
-            </ul>
-          </div>
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label for="hotel">
+                <input type="checkbox" name="hotel" id="hotel" checked>гостиница</label>
+            </li>
+            <li class="filter-item">
+              <label for="motel">
+                <input type="checkbox" name="motel" id="motel" checked>мотель</label>
+            </li>
+            <li class="filter-item">
+              <label for="apart">
+                <input type="checkbox" name="apart" id="apart" checked>апартаменты</label>
+            </li>
+          </ul>
+
         </fieldset>
         <div class="cost">
           <fieldset>
@@ -78,13 +79,14 @@
               <label for="price-min">
                 от
                 <input type="text" name="price-min" id="price-min" value="0"></label>
-              <span class="price-separator">|</span>
+              <!--тут будет псевдоэлемент-->
               <label for="price-max">
                 до
                 <input type="text"name="price-max" id="price-max" value="3000"></label>
             </div>
             <div class="slider-range">
               <div class="ui-slider-range"></div>
+              <!--Ну это признаюсь я тоже где-то видел, на всех сайтах там где есть такой слайедр. UI обозначает user interface типа штука для пользователя которой он вводить данные slider это же ползунок как бы мне все логично, но если так не правильно, тогда скажи как правильно я запомню и буду делать так как скажешь-->
               <div class="ui-slider-handel"></div>
               <div class="ui-slider-handel"></div>
             </div>
@@ -93,129 +95,120 @@
         </div>
       </form>
     </div>
+    <div class="sorting">
+      <div class="search-result">
+        <span class="result-text">найдено:</span>
+        <span class="result-quantity">3</span>
+      </div>
+      <div class="sort-by">
+        <span class="sort-header-text">сортировка:</span>
+        <ul class="sort-list">
+          <li class="sort-item">
+            <a href="#" class="sort-link">по цене</a>
+          </li>
+          <li class="sort-item">
+            <a href="#" class="sort-link">по типу</a>
+          </li>
+          <li class="sort-item">
+            <a href="#" class="sort-link">по рейтингу</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sort-arrow">
+        <a class="sort-icon-up" href="#"></a>
+        <a class="sort-icon-down" href="#"></a>
+      </div>
+    </div>
+    <div class="result-content">
+      <div class="content-block">
+        <div class="img-result">
+          <img src="http://placehold.it/135x90" alt=""></div>
+        <div class="content-main">
+          <div class="hotel-name">
+            <h2 class="hotel-name-title">amara resort & spa</h2>
+          </div>
+          <div class="content-text-left">
+            <span class="hotel-type">гостиница</span>
+            <a href="#" class="btn-more">подробнее</a>
+          </div>
+          <div class="content-text-right">
+            <span class="hotel-cost">от 3500 р.</span>
+            <a href="#" class="btn-booking">забронировать</a>
+          </div>
+        </div>
+        <div class="rating-block">
+          <div class="star star-4"></div>
+          <div class="rating">
+            <span class="rating-text">рейтинг:</span>
+            <span class="rating-value">8,5</span>
+          </div>
+        </div>
 
-    <div class="search-conteiner">
-      <div class="search-sort-header">
-        <div class="sorting">
-          <div class="search-result">
-            <span class="result-text">найдено:</span>
-            <span class="result-quantity">3</span>
+      </div>
+      <div class="content-block">
+        <div class="img-result">
+          <img src="http://placehold.it/135x90" alt=""></div>
+        <div class="content-main">
+          <div class="hotel-name">
+            <h2 class="hotel-name-title">desert quail inn</h2>
           </div>
-          <div class="sort-by">
-            <span class="sort-header-text">сортировка:</span>
-            <ul class="sort-list">
-              <li class="sort-item">
-                <a href="#" class="sort link">по цене</a>
-              </li>
-              <li class="sort-item">
-                <a href="#" class="sort link">по типу</a>
-              </li>
-              <li class="sort-item">
-                <a href="#" class="sort link">по рейтингу</a>
-              </li>
-            </ul>
+          <div class="content-text-left">
+            <span class="hotel-type">мотель</span>
+            <a href="#" class="btn-more">подробнее</a>
           </div>
-          <div class="sort-arrow">
-            <div class="sort-icon-up">
-              <a href="#"></a>
-            </div>
-            <div class="sort-icon-down">
-              <a href="#"></a>
-            </div>
+          <div class="content-text-right">
+            <span class="hotel-cost">от 2000 р.</span>
+            <a href="#" class="btn-booking">забронировать</a>
+          </div>
+        </div>
+        <div class="rating-block">
+          <div class="star star-2"></div>
+          <div class="rating">
+            <span class="rating-text">рейтинг:</span>
+            <span class="rating-value">8,9</span>
           </div>
         </div>
       </div>
-      <div class="result-content">
-        <div class="content-block">
-          <div class="img-result">
-            <img src="http://placehold.it/135x90" alt=""></div>
-          <div class="content-main">
-            <div class="hotel-name">
-              <span class="hotel-name-title">amara resort & spa</span>
-            </div>
-            <div class="content-text-left">
-              <span class="hotel-type">гостиница</span>
-              <a href="#" class="btn-more">подробнее</a>
-            </div>
-            <div class="content-text-right">
-              <span class="hotel-cost">от 3500 р.</span>
-              <a href="#" class="btn-booking">забронировать</a>
-            </div>
+      <div class="content-block">
+        <div class="img-result">
+          <img src="http://placehold.it/135x90" alt=""></div>
+        <div class="content-main">
+          <div class="hotel-name">
+            <h2 class="hotel-name-title">villas at poco diablo</h2>
           </div>
-          <div class="raitng-block">
-            <div class="star star-4"></div>
-            <div class="rating">
-              <span class="raiting-text">рейтинг:</span>
-              <span class="raiting-value">8,5</span>
-            </div>
+          <div class="content-text-left">
+            <span class="hotel-type">апартаменты</span>
+            <a href="#" class="btn-more">подробнее</a>
           </div>
-
-        </div>
-        <div class="content-block">
-          <div class="img-result">
-            <img src="http://placehold.it/135x90" alt=""></div>
-          <div class="content-main">
-            <div class="hotel-name">
-              <span class="hotel-name-title">desert quail inn</span>
-            </div>
-            <div class="content-text-left">
-              <span class="hotel-type">мотель</span>
-              <a href="#" class="btn-more">подробнее</a>
-            </div>
-            <div class="content-text-right">
-              <span class="hotel-cost">от 2000 р.</span>
-              <a href="#" class="btn-booking">забронировать</a>
-            </div>
-          </div>
-          <div class="raitng-block">
-            <div class="star star-2"></div>
-            <div class="rating">
-              <span class="raiting-text">рейтинг:</span>
-              <span class="raiting-value">8,9</span>
-            </div>
+          <div class="content-text-right">
+            <span class="hotel-cost">от 4000 р.</span>
+            <a href="#" class="btn-booking">забронировать</a>
           </div>
         </div>
-        <div class="content-block">
-          <div class="img-result">
-            <img src="http://placehold.it/135x90" alt=""></div>
-          <div class="content-main">
-            <div class="hotel-name">
-              <span class="hotel-name-title">villas at poco diablo</span>
-            </div>
-            <div class="content-text-left">
-              <span class="hotel-type">апартаменты</span>
-              <a href="#" class="btn-more">подробнее</a>
-            </div>
-            <div class="content-text-right">
-              <span class="hotel-cost">от 4000 р.</span>
-              <a href="#" class="btn-booking">забронировать</a>
-            </div>
-          </div>
-          <div class="raitng-block">
-            <div class="star star-3"></div>
-            <div class="rating">
-              <span class="raiting-text">рейтинг:</span>
-              <span class="raiting-value">9,2</span>
-            </div>
+        <div class="rating-block">
+          <div class="star star-3"></div>
+          <div class="rating">
+            <span class="rating-text">рейтинг:</span>
+            <span class="rating-value">9,2</span>
           </div>
         </div>
       </div>
     </div>
+
   </main>
   <footer class="main-footer">
-    <div class="container">
+    <div class="container-footer">
       <section class="footer-contacts">#visitsedona</section>
       <section class="footer-social">
-        <a class="social-btn social-btn-twit" href="#">Twiter</a>
+        <a class="social-btn social-btn-twit" href="#">Twitter</a>
         <a class="social-btn social-btn-fb" href="#">Facebook</a>
         <a class="social-btn social-btn-yt" href="#">youtube</a>
       </section>
       <section class="footer-copyright">
         <span>website by:</span>
         <a class="html-logo" href="https://htmlacademy.ru">
-
           <img src="#" alt="html-logo">html academy</a>
-      </section>
+        <!--Объясняю почему тут я использовал section, так как у меня нет опыта в верстки я брал примером из барбершопа не суди строго. Я быстро учусь, но когда куча информации--> </section>
     </div>
   </footer>
 
