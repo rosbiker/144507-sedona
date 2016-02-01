@@ -1,178 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Седона</title>
+  <meta charset="utf-8">
+  <title>Седона</title>
 </head>
 <body>
-	<header class="main-header">
-		<div class="container">
-			<a class="logo-header" href="index.html">
-				<img src="img/logo-top.png" alt="Logo" width="138" height="70"></a>
-			<nav class="main-nav">
-				<ul class="nav-list">
-					<li class="nav-item">
-						<a href="#">информация</a>
-					</li>
-					<li class="nav-item">
-						<a href="#">фото и видео</a>
-					</li>
+  <header class="main-header">
+    <div class="container">
+      <a class="logo-header" href="index.html">
+        <img src="img/logo-top.png" alt="Logo" width="138" height="70"></a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">информация</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">фото и видео</a>
+          </li>
 
-					<li class="nav-item">
-						<a href="#">карта штата</a>
-					</li>
-					<li class="nav-item">
-						<a href="#">гостиница</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+          <li class="nav-item">
+            <a href="#">карта штата</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">гостиница</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-	<main class="main-index">
-		<div class="container-intro">
-			<!--<img src="img/intro-font.jpg" alt="intro-font">
-			Просто добавил посмотреть как выглядит, но мне кажется это с помощью ЦСС как фон для блока надо делать. ДА?-->
-			<div class="text-intro">
-				<img src="img/text-intro.png" alt=""></div>
-			<div class="foot-intro">
-				<img src="img/arrow.png" alt="decoration-arrow"></div>
-		</div>
-		<!--в моем представлении первоначальном это два блока отдельных блок с горами и блок с контентом, но сейчас я вижу что можно было без него обойтись по этому удаляю-->
+  <main class="main-index">
+    <div class="container-intro">
+      <!--<img src="img/intro-font.jpg" alt="intro-font">
+      Просто добавил посмотреть как выглядит, но мне кажется это с помощью ЦСС как фон для блока надо делать. ДА?-->
+      <div class="text-intro">
+        <img src="img/text-intro.png" alt=""></div><!--посмотрел, но не понял что нет так?-->
+      <div class="foot-intro">
+        <img src="img/arrow.png" alt="decoration-arrow"></div>
+    </div>
+    <div class="row">
+      <h1 class="title-content">
+        седона - небольшой городок в аризоне, заслуживающий большего!
+      </h1>
+      <p>
+        рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
+      </p>
+    </div>
+    <div class="row">
+      <div class="description description-left">
+        <h2 class="description-title">настоящий городок</h2>
+        <span class="descritpion-num">-№1-</span>
+        <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <div class="img-city img-content">
+        <img src="img/city.jpg" alt="pic-city" href="800px"></div>
+    </div>
+    <div class="row">
+      <div class="recommendations">
+        <!--icon house-->
+        <h2 class="recommedation-title">жилье</h2>
+        <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </div>
+      <div class="recommendations">
+        <!--icon burger-->
+        <h2 class="recommedation-title">еда</h2>
+        <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </div>
+      <div class="recommendations">
+        <!--icon icon-->
+        <h2 class="recommedation-title">сувениры</h2>
+        <p>не только ктиайского, но и местного производства</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="img-bridge img-content">
+        <img src="img/bridge.jpg" alt="devil's bridge" href="800px"></div>
+      <div class="description description-right">
+        <h2 class="description-title">там есть мост дьявола</h2>
+        <span class="descritpion-num">-№2-</span>
+        <p>да, по нему можно пройти! если конечно осмелитесь</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="desription">
+        <h2 class="description-title">небольшая площадь</h2>
+        <span class="descritpion-num">-№3-</span>
+        <p>все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="description">
+        <h2 class="description-title">красивая дорога</h2>
+        <span class="descritpion-num">-№4-</span>
+        <p>ехать из лас-вегаса совсем не скучно!</p>
+      </div>
+      <div class="description">
+        <h2 class="description-title">мало туристов</h2>
+        <span class="descritpion-num">-№5-</span>
+        <p>большинство едет в гранд каньон и толпится там</p>
+      </div>
+    </div>
+    <div class="search">
+      <div class="search-intro">
+        <span class="intro-title">заинтересовались?</span>
+        <span class="intro-text">
+          укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        </span>
+      </div>
+      <div class="search-content">
+        <a class="search-btn" href="#">поиск гостиниц в седоне</a>
 
-		<div class="row">
-			<h1 class="title-content">
-				седона - небольшой городок в аризоне, заслуживающий большего!
-			</h1>
-			<p>
-				рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
-			</p>
-		</div>
-		<div class="row">
-			<div class="description description-left">
-				<h2 class="description-title">настоящий городок</h2>
-				<span class="descritpion-num">-№1-</span>
-				<p>седона - не аттракцион для туристов, там течет своя жизнь</p>
-			</div>
-			<div class="img-city img-content">
-				<img src="img/city.jpg" alt="pic-city" href="800px"></div>
-		</div>
-		<div class="row">
-			<div class="recommendations">
-				<!--icon house-->
-				<h2 class="recommedation-title">жилье</h2>
-				<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-			</div>
-			<div class="recommendations">
-				<!--icon burger-->
-				<h2 class="recommedation-title">еда</h2>
-				<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-			</div>
-			<div class="recommendations">
-				<!--icon icon-->
-				<h2 class="recommedation-title">сувениры</h2>
-				<p>не только ктиайского, но и местного производства</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="img-bridge img-content">
-				<img src="img/bridge.jpg" alt="devil's bridge" href="800px"></div>
-			<div class="description description-right">
-				<h2 class="description-title">там есть мост дьявола</h2>
-				<span class="descritpion-num">-№2-</span>
-				<p>да, по нему можно пройти! если конечно осмелитесь</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="desription">
-				<h2 class="description-title">небольшая площадь</h2>
-				<span class="descritpion-num">-№3-</span>
-				<p>все достопримечательности находятся очень близко</p>
-			</div>
-			<div class="description">
-				<h2 class="description-title">красивая дорога</h2>
-				<span class="descritpion-num">-№4-</span>
-				<p>ехать из лас-вегаса совсем не скучно!</p>
-			</div>
-			<div class="description">
-				<h2 class="description-title">мало туристов</h2>
-				<span class="descritpion-num">-№5-</span>
-				<p>большинство едет в гранд каньон и толпится там</p>
-			</div>
-		</div>
-		<div class="search">
-			<div class="search-intro">
-				<span class="intro-title">заинтересовались?</span>
-				<span class="intro-text">
-					укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-				</span>
-			</div>
-			<div class="search-content">
-				<a class="search-btn" href="#">поиск гостиниц в седоне</a>
+        <div class="search-popup">
+          <form method="get" action="#" name="booking-form">
+            <div class="calendar-in">
+              <label for="date-checkin">дата заезда:</label>
+              <input type="text" id="date-checkin" name="date-checkin">
+              <div class="calendar-icon"></div>
+            </div>
+            <div class="calendar-out">
+              <label for="date-checkout">дата выезда:</label>
+              <input type="text" id="date-checkout" name="date-checkout">
+              <div class="calendar-icon"></div>
+            </div>
+            <div class="guest">
+              <div class="adults">
+                <a href="#" class="adults-rem">-</a>
+                <label for="adults-count">Взрослые:</label>
+                <input type="text" value="2" id="adults-count" name="adults">
+                <a href="" class="adults-add">+</a>
+              </div>
+              <div class="childrens">
+                <a href="#" class="childrens-rem">-</a>
+                <label for="children-count">Дети:</label>
+                <input type="text" value="0" id="children-count" name="children">
+                <a href="#" class="childrens-add">+</a>
+              </div>
+            </div>
+            <input type="submit" value="НАЙТИ"></form>
+        </div>
+      </div>
+    </div>
 
-				<div class="search-popup">
-					<form method="get" action="#" name="booking-form">
-						<label for="date-checkin">
-							<!--Я в курсе что она не обязателен, но разве это ошибка всегда писать for для label. Или так ни кто не далеат и мне ты не советуешь? -->
-							дата заезда:
-							<input type="text" id="date-checkin" name="date-checkin"></label>
-						<div class="calendar-icon"></div>
-						<label for="date-checkout">
-							<!--цитата из тех.задания: Иконка календаря в поле ввода даты должна быть добавлена отдельным элементом. А как ее добавить чтоб она была внутри поля ввода? -->
-							дата выезда:
-							<input type="text" id="date-checkout" name="date-checkout"></label>
-						<div class="calendar-icon"></div>
-						<div class="guest">
-							<div class="adults">
-								<!-- Нужно заменить слово adult на более универсальное слово. Не совсем понимаю почему это слово не подходит сюда. Как можно назвать более универсально бло-->
-								<a href="#" class="adults-rem">-</a>
-								<label for="adults-count">
-									Взрослые:
-									<input type="text" value="2" id="adults-count" name="adults"></label>
-								<a href="" class="adults-add">+</a>
-							</div>
-							<div class="childrens">
-								<a href="#" class="childrens-rem">-</a>
-								<label for="children-count">
-									Дети:
-									<input type="text" value="0" id="children-count" name="children"></label>
-								<a href="#" class="childrens-add">+</a>
-								<!--Признаюсь что вот эту конструкцию я подсмотрел на нашем сайте в модуле бронирования
-								<div class="search-children">
-								<label for="search-children">
-								Дети:
-								<input type="hidden" value="2" id="search-children" name="children"></label>
-								<div class="search-guest-prev">-</div>
-								<span class="adults-count">0</span>
-								<div class="search-guest-next">+</div>
-								</div>
-								Тут я как бы понимаю что к чему, скрытое поле отправляет данные которое берется из поля span, а поле span как то запрограммировано в JS
-								-->
-							</div>
-						</div>
-						<input type="submit" value="НАЙТИ"></form>
-				</div>
-			</div>
-		</div>
-
-		<div class="map-interactive"></div>
-	</main>
-	<footer class="main-footer">
-		<div class="container-footer">
-			<section class="footer-contacts">#visitsedona</section>
-			<section class="footer-social">
-				<a class="social-btn social-btn-twit" href="#">Twitter</a>
-				<a class="social-btn social-btn-fb" href="#">Facebook</a>
-				<a class="social-btn social-btn-yt" href="#">youtube</a>
-			</section>
-			<section class="footer-copyright">
-				<span>website by:</span>
-				<a class="html-logo" href="https://htmlacademy.ru">
-
-					<img src="#" alt="html-logo">html academy</a>
-			</section>
-		</div>
-	</footer>
+    <div class="map-interactive"></div>
+  </main>
+  <footer class="main-footer">
+    <div class="container-footer">
+      <div class="footer-contacts">
+        <a href="#">#visitsedona</a>
+      </div>
+      <div class="footer-social">
+        <a class="social-btn social-btn-twit" href="#">Twitter</a>
+        <a class="social-btn social-btn-fb" href="#">Facebook</a>
+        <a class="social-btn social-btn-yt" href="#">youtube</a>
+      </div>
+      <div class="footer-copyright">
+        <span>website by:</span>
+        <a class="html-logo" href="https://htmlacademy.ru">html academy</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
