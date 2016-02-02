@@ -1,22 +1,32 @@
 body {
-  font-family: "PTSans", ;
+  font-family: PTSans, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
-
-
 }
-h2 {
-  font-style: 21px;
+
+h1{
+  font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
 }
 
+h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
 
-.container-intro {
+li.nav-item a {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+/* .container-intro {
   height: 400px;
   background: url("../img/text-intro.png") no-repeat 50% 30%,
   url("../img/intro-font.jpg") no-repeat 50% 10%;
-
-}
+} */
 
 
