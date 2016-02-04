@@ -1,26 +1,32 @@
 body {
-  font-family: PTSans, sans-serif;
+  font-family: "PTSans", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
 }
 
-h1{
+.title-content{
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-h2 {
+.description-title {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.recommedation-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 li.nav-item a {
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* .container-intro {
