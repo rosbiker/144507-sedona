@@ -3,31 +3,42 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .title-content{
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
 }
 
 .description-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
 }
+
 
 .recommedation-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
+
 }
 
-li.nav-item a {
+
+.nav-link {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
+  text-decoration: none;
 }
+
 
 /* .container-intro {
   height: 400px;
