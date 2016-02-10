@@ -14,10 +14,23 @@ body
 
 .container
 {
-    position: relative;
-
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 768px;
     margin: 0 auto;
+}
+
+.row {
+  outline: 1px solid red;
+}
+
+.content-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.btn {
+  display: block;
+  vertical-align: top;
 }
 
 .nav-list
@@ -66,8 +79,8 @@ body
 
 .main-index
 {
-    width: 1200px;
-    margin: 0 auto;
+
+
 }
 
 
@@ -86,17 +99,49 @@ body
 
     width: 33.33%;
     margin: 0;
+
+    outline: 1px solid black;
 }
 
-.column-dbl
+.column-double
 {
     float: left;
 
     width: 66.66%;
     margin: 0;
+    outline: 3px  solid yellow;
 }
 
-.row-title
+.inner-column-left {
+  float: left;
+  outline: 3px solid green;
+  margin-right: 20px;
+}
+
+.inner-column-right {
+  float: right;
+  outline: 1px solid red;
+  min-height: 5px;
+  min-width:55px;
+}
+
+.inner-column-center {
+  outline: 4px solid orange;
+  margin-right: 135px;
+  margin-left: 165px;
+}
+
+.result-content {
+  padding: 0 6%;
+}
+
+
+
+/* .shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); Параметры тени
+} */
+
+.promo
 {
     width: 575px;
     margin: 0 auto;
@@ -134,15 +179,15 @@ body
 
 .search-content
 {
-    position: absolute;
-    left: 50%;
-
     width: 568px;
-    margin-left: -284px;
+    margin: 0 auto;
 
     background-color: orange;
 }
 
+.search-btn {
+    text-decoration: none;
+}
 
 .map-interactive
 {
@@ -151,95 +196,70 @@ body
     background-color: green;
 }
 
+.index-footer {
+
+  vertical-align: bottom;
+}
 
 /* сетка для inner.html */
 
-.main-inner
-{
-    width: 1200px;
-    margin: 0 auto;
-}
+
 .content-filter
 {
     background: url('../img/inner-font.jpg') no-repeat ;
 }
 
-.infrastruture
+.filter
 {
-    float: left;
+    display: inline-block;
 }
 
-.hotel-type
-{
-    float: left;
-}
 
-.cost
-{
-    float: right;
-}
 
-.search-result
-{
-    float: left;
-}
 
 .sort-by
 {
-    float: left;
 
-    /* background-color: lightgreen; */
 }
 
 .sort-arrow
 {
-    float: right;
+
 }
 
-.img-result
-{
-    float: left;
-}
 
 .content-main
 {
-    float: left;
+
 
     /* background-color: green; */
 }
 
 .rating-block
 {
-    float: right;
+
 }
 
 .sorting
 {
-    /* background-color: lightblue; */
+
 }
-.sort-list
-{
+
+.sort-list {
+    display: inline-block;
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.sort-item
-{
+.sort-item {
     display: inline-block;
 
-    width: 20%;
-    padding: 15px 0;
-
-    text-align: center;
 }
 
-/* конец сетки для inner */
-.row-title p
-{
-    text-align: center;
-}
+
+
 
 
 
@@ -275,30 +295,7 @@ body
     color: #000;
 }
 
-.description-left
-{
-    color: #fff;
-    background-color: #81b3d2;
-}
-
-
-.description-left h2
-{
-    color: #fff;
-}
-
-.description-right
-{
-    color: #fff;
-    background-color: #81b3d2;
-}
-
-.description-right h2
-{
-    color: #fff;
-}
-
-.container-intro
+.intro
 {
     height: 510px;
     margin-bottom: 65px;
@@ -310,11 +307,3 @@ body
 
 
 
-.container-footer
-{
-    width: 1200px;
-    min-height: 65px;
-    margin: 0 auto;
-
-    /* background-color: red; */
-}
