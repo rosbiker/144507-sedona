@@ -12,6 +12,13 @@ body
     color: #333;
 }
 
+img {
+   max-width: 100%;
+   height: auto;
+   vertical-align: bottom;
+   margin: 0 auto;
+}
+
 .container
 {
     max-width: 1200px;
@@ -116,13 +123,14 @@ body
   float: left;
   outline: 3px solid green;
   margin-right: 20px;
+  width: 135px;
 }
 
 .inner-column-right {
   float: right;
   outline: 1px solid red;
   min-height: 5px;
-  min-width:55px;
+  width: 125px;
 }
 
 .inner-column-center {
@@ -191,14 +199,17 @@ body
 
 .map-interactive
 {
+    position: relative;
     height: 470px;
 
-    background-color: green;
+    background-image: url("../img/map.png");
 }
 
-.index-footer {
 
-  vertical-align: bottom;
+.index-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 /* сетка для inner.html */
