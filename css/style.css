@@ -158,9 +158,10 @@ img
 
 
 
-/* .shadow {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); Параметры тени
-} */
+.shadow
+{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
 
 .promo
 {
@@ -234,6 +235,8 @@ img
 
 .content-filter
 {
+    padding: 30px 70px;
+
     background: url('../img/inner-font.jpg') no-repeat ;
 }
 
