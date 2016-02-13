@@ -12,32 +12,39 @@ body
     color: #333;
 }
 
-img {
-   max-width: 100%;
-   height: auto;
-   vertical-align: bottom;
-   margin: 0 auto;
+img
+{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    vertical-align: bottom;
 }
 
 .container
 {
-    max-width: 1200px;
     min-width: 768px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.row {
-  outline: 1px solid red;
+.row
+{
+    outline: 1px solid red;
 }
 
-.content-text {
-  display: inline-block;
-  vertical-align: top;
+.content-text
+{
+    display: inline-block;
+
+    vertical-align: top;
 }
 
-.btn {
-  display: block;
-  vertical-align: top;
+.btn
+{
+    display: block;
+
+    vertical-align: top;
 }
 
 .nav-list
@@ -84,11 +91,7 @@ img {
     margin-left: -69px;
 }
 
-.main-index
-{
 
-
-}
 
 
 
@@ -116,31 +119,41 @@ img {
 
     width: 66.66%;
     margin: 0;
+
     outline: 3px  solid yellow;
 }
 
-.inner-column-left {
-  float: left;
-  outline: 3px solid green;
-  margin-right: 20px;
-  width: 135px;
+.inner-column-left
+{
+    float: left;
+
+    width: 135px;
+    margin-right: 20px;
+
+    outline: 3px solid green;
 }
 
-.inner-column-right {
-  float: right;
-  outline: 1px solid red;
-  min-height: 5px;
-  width: 125px;
+.inner-column-right
+{
+    float: right;
+
+    width: 125px;
+    min-height: 5px;
+
+    outline: 1px solid red;
 }
 
-.inner-column-center {
-  outline: 4px solid orange;
-  margin-right: 135px;
-  margin-left: 165px;
+.inner-column-center
+{
+    margin-right: 135px;
+    margin-left: 165px;
+
+    outline: 4px solid orange;
 }
 
-.result-content {
-  padding: 0 6%;
+.result-content
+{
+    padding: 0 6%;
 }
 
 
@@ -193,23 +206,27 @@ img {
     background-color: orange;
 }
 
-.search-btn {
+.search-btn
+{
     text-decoration: none;
 }
 
 .map-interactive
 {
     position: relative;
+
     height: 470px;
 
-    background-image: url("../img/map.png");
+    background-image: url('../img/map.png');
 }
 
 
-.index-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+.index-footer
+{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
 }
 
 /* сетка для inner.html */
@@ -228,45 +245,33 @@ img {
 
 
 
-.sort-by
-{
 
-}
 
-.sort-arrow
-{
 
-}
 
 
 .content-main
 {
-
-
     /* background-color: green; */
 }
 
-.rating-block
+
+
+
+
+.sort-list
 {
-
-}
-
-.sorting
-{
-
-}
-
-.sort-list {
     display: inline-block;
+
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.sort-item {
+.sort-item
+{
     display: inline-block;
-
 }
 
 
@@ -315,6 +320,3 @@ img {
     url('../img/arrow.png') no-repeat 50% 100%,
     url('../img/intro-font.jpg') no-repeat 50% 10%;
 }
-
-
-
