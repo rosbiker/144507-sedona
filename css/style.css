@@ -30,7 +30,7 @@ img
 
 .row
 {
-    outline: 1px solid red;
+   /*  outline: 1px solid red; */
 }
 
 .content-text
@@ -110,7 +110,7 @@ img
     width: 33.33%;
     margin: 0;
 
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .column-double
@@ -120,7 +120,7 @@ img
     width: 66.66%;
     margin: 0;
 
-    outline: 3px  solid yellow;
+    /* outline: 3px  solid yellow; */
 }
 
 .inner-column-left
@@ -130,7 +130,7 @@ img
     width: 135px;
     margin-right: 20px;
 
-    outline: 3px solid green;
+    /* outline: 3px solid green; */
 }
 
 .inner-column-right
@@ -140,7 +140,7 @@ img
     width: 125px;
     min-height: 5px;
 
-    outline: 1px solid red;
+   /*  outline: 1px solid red; */
 }
 
 .inner-column-center
@@ -148,7 +148,7 @@ img
     margin-right: 135px;
     margin-left: 165px;
 
-    outline: 4px solid orange;
+    /* outline: 4px solid orange; */
 }
 
 .result-content
@@ -162,11 +162,40 @@ img
 {
     box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
 
 .promo
 {
-    width: 575px;
+    width: 600px;
+    padding-top: 60px;
     margin: 0 auto;
+}
+.promo-title {
+
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000;
+}
+
+.promo p {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+
+.color {
+  background-color: #81b3d2;
+}
+
+.intro-title {
+  font-size: 24px;
+  font-weight: 700;
+
 }
 
 .img-content
@@ -177,10 +206,30 @@ img
 }
 .description
 {
-    min-height: 255px;
 
+    padding-top: 35px;
+    padding-bottom: 45px;
     text-align: center;
 }
+
+.description-title
+{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 25px;
+
+}
+
+h2 {
+  color: #000;
+}
+
+p {
+  margin-top: 25px;
+}
+
+
 
 .recommendations
 {
@@ -197,6 +246,7 @@ img
 .search-intro
 {
     text-align: center;
+    padding-top: 50px;
 }
 
 .search-content
@@ -216,6 +266,7 @@ img
 {
     position: relative;
 
+    width: 100%;
     height: 470px;
 
     background-image: url('../img/map.png');
@@ -280,31 +331,6 @@ img
 
 
 
-
-
-
-.title-content
-{
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-
-    text-align: center;
-
-    color: #000;
-}
-
-
-.description-title
-{
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-
-    color: #000;
-}
-
-
 .recommedation-title
 {
     font-size: 21px;
@@ -317,7 +343,7 @@ img
 .intro
 {
     height: 510px;
-    margin-bottom: 65px;
+    margin-bottom: 0px;
 
     background: url('../img/text-intro.png') no-repeat 50% 80px,
     url('../img/arrow.png') no-repeat 50% 100%,
