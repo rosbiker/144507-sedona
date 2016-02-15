@@ -28,11 +28,6 @@ img
     margin: 0 auto;
 }
 
-.row
-{
-   /*  outline: 1px solid red; */
-}
-
 .content-text
 {
     display: inline-block;
@@ -65,6 +60,7 @@ img
     padding: 15px 0;
 
     text-align: center;
+    vertical-align: top;
 }
 
 .nav-item:nth-child(2)
@@ -91,10 +87,6 @@ img
     margin-left: -69px;
 }
 
-
-
-
-
 .clearfix:after
 {
     display: table;
@@ -109,7 +101,6 @@ img
 
     width: 33.33%;
     margin: 0;
-
     /* outline: 1px solid black; */
 }
 
@@ -119,7 +110,6 @@ img
 
     width: 66.66%;
     margin: 0;
-
     /* outline: 3px  solid yellow; */
 }
 
@@ -129,7 +119,6 @@ img
 
     width: 135px;
     margin-right: 20px;
-
     /* outline: 3px solid green; */
 }
 
@@ -137,65 +126,99 @@ img
 {
     float: right;
 
-    width: 125px;
+    width: 110px;
     min-height: 5px;
-
-   /*  outline: 1px solid red; */
+    /*  outline: 1px solid red; */
 }
 
 .inner-column-center
 {
     margin-right: 135px;
     margin-left: 165px;
-
     /* outline: 4px solid orange; */
 }
 
-.result-content
+.content-block
 {
-    padding: 0 6%;
+    margin-bottom: 1px;
+    padding: 30px 6%;
+
+    background-color: #fefefe;
 }
 
+.sorting
+{
+    margin-bottom: 1px;
+    padding: 30px 6%;
 
+    background-color: #fefefe;
+}
+
+.inner-main
+{
+    background-color: #e5e5e5;
+}
 
 .shadow
 {
     box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
-h1, h2, p {
-  margin: 0;
-  padding: 0;
-}
 
+h1,
+h2,
+p
+{
+    margin: 0;
+    padding: 0;
+}
 
 .promo
 {
     width: 600px;
-    padding-top: 60px;
     margin: 0 auto;
+    padding-top: 60px;
 }
-.promo-title {
 
-    text-align: center;
+.promo-title
+{
     font-size: 21px;
     line-height: 26px;
+
+    text-align: center;
+
     color: #000;
 }
 
-.promo p {
-  text-align: center;
-  margin-top: 35px;
-  margin-bottom: 55px;
+.promo p
+{
+    margin-top: 35px;
+    margin-bottom: 55px;
+
+    text-align: center;
 }
 
-.color {
-  background-color: #81b3d2;
+.description
+{
+    background-color: #eee;
 }
 
-.intro-title {
-  font-size: 24px;
-  font-weight: 700;
+.description-color
+{
+    background-color: #81b3d2;
+}
 
+.description-color .description-block
+{
+    color: #fff;
+}
+.description-color .description-title
+{
+    color: #fff;
+}
+.intro-title
+{
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .img-content
@@ -204,11 +227,14 @@ h1, h2, p {
 
     height: 255px;
 }
-.description
+.description-block
 {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 3%;
+    /* только такой паддинг дал необходимый результат */
 
-    padding-top: 35px;
-    padding-bottom: 45px;
     text-align: center;
 }
 
@@ -217,23 +243,28 @@ h1, h2, p {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+
     margin-bottom: 25px;
-
 }
 
-h2 {
-  color: #000;
+h2
+{
+    color: #000;
 }
 
-p {
-  margin-top: 25px;
+p
+{
+    margin-top: 25px;
 }
-
-
 
 .recommendations
 {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px;
     padding-top: 160px;
+    padding-bottom: 85px;
 
     text-align: center;
 }
@@ -245,23 +276,38 @@ p {
 
 .search-intro
 {
+    padding-top: 55px;
+
     text-align: center;
-    padding-top: 50px;
 }
 
-.search-content
-{
-    width: 568px;
-    margin: 0 auto;
 
-    background-color: orange;
-}
 
 .search-btn
 {
-    text-decoration: none;
-}
+    font-size: 21px;
+    font-weight: 700;
 
+    display: block;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 568px;
+    height: 86px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 30px 0;
+
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #766357;
+}
+.main-footer
+{
+    position: relative;
+}
 .map-interactive
 {
     position: relative;
@@ -271,7 +317,6 @@ p {
 
     background-image: url('../img/map.png');
 }
-
 
 .index-footer
 {
@@ -283,35 +328,24 @@ p {
 
 /* сетка для inner.html */
 
-
 .content-filter
 {
-    padding: 30px 70px;
+    padding: 30px 6%;
 
-    background: url('../img/inner-font.jpg') no-repeat ;
+    background: url('../img/inner-background.jpg') no-repeat ;
 }
 
 .filter
 {
     display: inline-block;
+
+    vertical-align: top;
 }
-
-
-
-
-
-
-
-
 
 .content-main
 {
     /* background-color: green; */
 }
-
-
-
-
 
 .sort-list
 {
@@ -321,15 +355,16 @@ p {
     padding: 0;
 
     list-style: none;
+
+    vertical-align: top;
 }
 
 .sort-item
 {
     display: inline-block;
+
+    vertical-align: top;
 }
-
-
-
 
 .recommedation-title
 {
@@ -343,9 +378,9 @@ p {
 .intro
 {
     height: 510px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     background: url('../img/text-intro.png') no-repeat 50% 80px,
     url('../img/arrow.png') no-repeat 50% 100%,
-    url('../img/intro-font.jpg') no-repeat 50% 10%;
+    url('../img/intro-background.jpg') no-repeat 50% 10%;
 }
