@@ -1,3 +1,46 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
+
+
+ /* начало стилизации */
 body
 {
     font-family: 'PTSans', 'Tahoma', sans-serif;
@@ -232,7 +275,7 @@ p
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 3%;
+    padding: 3% 4%;
     /* только такой паддинг дал необходимый результат */
 
     text-align: center;
@@ -262,9 +305,9 @@ p
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 30px;
-    padding-top: 160px;
-    padding-bottom: 85px;
+    padding: 3%;
+    padding-top: 6%;
+    padding-bottom: 5%;
 
     text-align: center;
 }
@@ -307,6 +350,7 @@ p
 .main-footer
 {
     position: relative;
+
 }
 .map-interactive
 {
@@ -318,19 +362,69 @@ p
     background-image: url('../img/map.png');
 }
 
-.index-footer
+.content-footer
 {
     position: absolute;
     bottom: 0;
 
     width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
+.footer-contacts {
+  text-align: center;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.footer-contacts a {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.footer-social {
+  text-align: center;
+  padding-top: 35px;
+
+}
+
+.footer-social a {
+  font-size: 0;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background: #81b3d2;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.social-btn-twit {
+  content: "0x66";
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /* сетка для inner.html */
 
 .content-filter
 {
-    padding: 30px 6%;
+    padding: 0 6%;
 
     background: url('../img/inner-background.jpg') no-repeat ;
 }
@@ -384,3 +478,58 @@ p
     url('../img/arrow.png') no-repeat 50% 100%,
     url('../img/intro-background.jpg') no-repeat 50% 10%;
 }
+
+
+.filter {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-item label {
+  font-size:  14px;
+  line-height:  21px;
+}
+
+.burger::before {
+    content: " ";
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 74px;
+    height: 70px;
+    background-position: -5px -5px;
+}
+.house::before {
+    content: " ";
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 75px;
+    height: 72px;
+    background-position: -89px -5px;
+  }
+
+.present::before {
+    content: " ";
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 64px;
+    height: 76px;
+    background-position: -5px -87px;
+}
+
